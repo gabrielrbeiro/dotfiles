@@ -1,0 +1,31 @@
+[general]
+import = ["~/.config/alacritty/theme.toml"]
+live_config_reload = true
+
+[window]
+opacity = 0.85
+blur = false
+option_as_alt = "OnlyLeft"
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+size = 16
+offset = { x = 0, y = 0 }
+
+[cursor]
+style = { shape = "Block", blinking = "Always" }
+blink_interval = 400
+
+[mouse]
+hide_when_typing = true
+
+[keyboard]
+bindings = [
+  { key = "ArrowRight", mods = "Alt",     chars = "\u001BF" },
+  { key = "ArrowLeft",  mods = "Alt",     chars = "\u001BB" },
+  { key = "Enter",      mods = "Command", action = "ToggleFullscreen" },
+]
+
+[env]
+TERM="alacritty-direct"
