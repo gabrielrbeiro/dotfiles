@@ -1,0 +1,11 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/bash
+sudo apt update
+sudo apt install -y ripgrep
+{{ else if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+brew install ripgrep
+{{ end -}}
+
+# tmux plugin manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
