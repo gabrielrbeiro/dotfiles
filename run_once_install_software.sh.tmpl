@@ -8,4 +8,6 @@ brew install ripgrep
 {{ end -}}
 
 # tmux plugin manager
-git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+if ! [ -d ~/.config/tmux/plugins ]; then
+	git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+fi

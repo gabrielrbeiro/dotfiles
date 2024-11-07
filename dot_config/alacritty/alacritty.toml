@@ -29,3 +29,4 @@ bindings = [
 
 [env]
 TERM="alacritty-direct"
+SHELL="/bin/zsh"
