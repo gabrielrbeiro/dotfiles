@@ -1,7 +1,7 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/bash
 sudo apt update
-sudo apt install -y ripgrep luarocks lua zip
+sudo apt install -y ripgrep luarocks lua@5.1 zip
 {{ else if eq .chezmoi.os "darwin" -}}
 #!/bin/bash
 brew install ripgrep lua luarocks stylua
