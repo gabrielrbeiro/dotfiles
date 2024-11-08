@@ -46,6 +46,6 @@ nvm install --lts
 curl -L https://fly.io/install.sh | sh
 
 {{ if eq .chezmoi.os "linux" -}}
-export FLYCTL_INSTALL="/home/codespace/.fly"
-export PATH="$FLYCTL_INSTALL/bin:$PATH"
+echo "export FLYCTL_INSTALL=\"/home/codespace/.fly\"" >> ~/.zshrc
+echo "export PATH=\"\$FLYCTL_INSTALL/bin:\$PATH\"" >> ~/.zshrc
 {{ end -}}
