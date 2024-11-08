@@ -39,3 +39,6 @@ mv /tmp/fd-v10.2.0-x86_64-unknown-linux-gnu/fd ~/.bin/fd
 echo "export PATH=\$PATH:~/.bin" >> ~/.zshrc
 {{ end -}}
 
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+source ~/.zshrc
+nvm install --lts
