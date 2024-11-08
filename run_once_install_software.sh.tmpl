@@ -4,7 +4,7 @@ sudo apt update
 sudo apt install -y ripgrep
 {{ else if eq .chezmoi.os "darwin" -}}
 #!/bin/bash
-brew install ripgrep
+brew install ripgrep lua
 {{ end -}}
 
 # tmux plugin manager
