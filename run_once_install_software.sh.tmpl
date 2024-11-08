@@ -16,6 +16,8 @@ fi
 go install -v github.com/incu6us/goimports-reviser/v3@latest
 
 {{ if eq .chezmoi.os "linux" -}}
+mkdir -p ~/.bin
+
 # Stylua
 wget -O /tmp/stylua.zip \
     https://github.com/JohnnyMorganz/StyLua/releases/download/v0.20.0/stylua-linux-x86_64.zip
