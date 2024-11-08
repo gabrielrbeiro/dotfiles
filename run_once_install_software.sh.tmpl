@@ -40,8 +40,12 @@ echo "export PATH=\$PATH:~/.bin" >> ~/.zshrc
 {{ end -}}
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
-source ~/.zshrc
 nvm install --lts
 
 # Install flyio
 curl -L https://fly.io/install.sh | sh
+
+{{ if eq .chezmoi.os "linux" -}}
+export FLYCTL_INSTALL="/home/codespace/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
+{{ end -}}
