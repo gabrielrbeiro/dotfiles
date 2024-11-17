@@ -7,8 +7,6 @@ require("config.base.treesitter")
 require("config.base.telescope")
 require("config.base.surround")
 require("config.base.todo-comments")
-require("config.base.lsp")
-require("config.base.autocomplete")
 
 require("config.ui.colorscheme")
 require("config.ui.oil")
