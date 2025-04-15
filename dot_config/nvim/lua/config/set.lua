@@ -1,3 +1,4 @@
+vim.o.number = true
 vim.o.relativenumber = true
 vim.o.wrap = false
 
@@ -24,3 +25,7 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 vim.opt.colorcolumn = "120"
+
+vim.opt.clipboard = 'unnamedplus'
+vim.opt.cursorline = true
+
